@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <div id="app">
         <button id="toggle-mode">
             <span>ativar/desativar</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
         </button>
     </div>
 
-    <section id="timer">
+    <section id="timer" class="flex">
         <span id="minutes">00</span>
         <span>:</span>
         <span id="second">00</span>
     </section>
 
-    <section id="controls">
-        <button>play</button>
-        <button>pause</button>
-        <button>stop</button>
-        <button>set</button>
-        <button>musicon</button>
-        <button>musicoff</button>
+    <section id="controls" class="flex">
+        <button class="ph ph-play-circle"></button>
+        <button class="ph ph-pause-circle"></button>
+        <button class="ph ph-stop-circle"></button>
+        <button class="ph ph-timer"></button>
+        <button class="ph ph-speaker-none">musicon</button>
+        <button class="ph ph-speaker-high">musicoff</button>
     </section>
 </body>
 </html>
